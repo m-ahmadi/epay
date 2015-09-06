@@ -1,3 +1,4 @@
+@viewport { width: device-width; }
 @media screen and (max-width: 1024px) {
 	body {
 		/* width: 1007px; */
@@ -70,11 +71,17 @@ header {
 	background-color: #0e4c81;
 	background-image:
 		url('../images/211.png'),
-		url('../images/122.png'),
 		url('../images/132.png'),
 		url('../images/phone.png'),
+		url('../images/paypal.png'),
+		url('../images/master.png'),
+		url('../images/visa.png'),
+		url('../images/amazon.png'),
 		url('../images/asfalt-dark.png');
 	background-repeat:
+		no-repeat,
+		no-repeat,
+		no-repeat,
 		no-repeat,
 		no-repeat,
 		no-repeat,
@@ -82,9 +89,12 @@ header {
 		repeat;
 	background-position:
 		69em 3em,
-		22em 4em,
 		51em 3em,
 		2% 0%,
+		23em 5.8em,
+		53em 1.8em,
+		45em 6em,
+		13em 0.6em,
 		0% 0%;
 }
 
@@ -150,25 +160,25 @@ nav ul, nav li {
 
 
 
-.navigation .home {
+.navigation :nth-child(1) a {
 	background-image:url('../images/h3.png');
 	background-repeat:no-repeat;
 	background-position: 86% 51%;
     padding: 1.5em 3em 1.5em 1em;
 }
-.navigation .info {
+.navigation :nth-child(2) a  {
 	background-image:url('../images/cc.png');
 	background-repeat:no-repeat;
 	background-position: 92% 56%;
     padding: 1.5em 3.5em 1.5em 1em;
 }
-.navigation .about-us {
+.navigation :nth-child(3) a {
 	background-image:url('../images/a.png');
 	background-repeat:no-repeat;
 	background-position: 87% 51%;
     padding: 1.5em 3.5em 1.5em 1em;
 }
-.navigation .contact-us {
+.navigation :nth-child(4) a {
 	background-image:url('../images/c.png');
 	background-repeat:no-repeat;
 	background-position: 89% 51%;
@@ -268,14 +278,48 @@ nav li:hover .sub-menu {
 	border-bottom:1px solid #4F4F4F;
 	text-align: right;
 }
-.sub-menu > li :hover {
+.sub-menu > li > a:hover {
 	/* background:#3e3436; */
+	
+	
+	background-color:#F11A53;
 	color:white;
 	
-	background: rgb(241, 26, 83);
-	
-	
 }
+.sub-menu :nth-child(1) a {
+	background:url('../images/sm/paypal.png') no-repeat 0.4em 1.1em;
+}
+.sub-menu :nth-child(2) a {
+	background:url('../images/sm/visamaster.png') no-repeat 0.6em 0.3em;
+}
+.sub-menu :nth-child(3) a {
+	background:url('../images/sm/paypal-v.png') no-repeat 0.5em 0.45em;
+}
+.sub-menu :nth-child(4) a {
+	background:url('../images/sm/wepay.png') no-repeat 1.2em 0.15em;
+}
+.sub-menu :nth-child(5) a {
+	background:url('../images/sm/exam.png') no-repeat 0.9em 0.15em;
+}
+.sub-menu :nth-child(6) a {
+	background:url('../images/sm/college.png') no-repeat 0.9em 0.4em;;
+}
+.sub-menu :nth-child(7) a {
+	background:url('../images/sm/embassy.png') no-repeat 0.9em 0.2em;
+}
+.sub-menu :nth-child(8) a {
+	background:url('../images/sm/aliexpress.png') no-repeat 0.2em 0.3em;
+}
+.sub-menu :nth-child(9) a {
+	background:url('../images/sm/amazon.png') no-repeat 1.3em 0.2em;
+}
+.sub-menu :nth-child(10) a {
+	background:url('../images/sm/google-ad.png') no-repeat 0.5em 0.2em;
+}
+.sub-menu :nth-child(11) a {
+	background:url('../images/sm/moneybookers.png') no-repeat 0.8em 0.3em;
+}
+
 nav .visible {
 	z-index:1;
 	opacity:1;
@@ -324,7 +368,6 @@ nav 	ul  a:active {
 .texts {
 	/* margin-top: 40%; */
 	float:right;
-	
 	/*
 	background: #fceabb;
 	background: -moz-linear-gradient(top,  #fceabb 0%, #fccd4d 54%, #fbdf93 68%, #fccd4d 92%, #fccd4d 92%, #fbdf93 100%);
@@ -336,64 +379,203 @@ nav 	ul  a:active {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 );
 */
 
-/* background-color: #fce08d; */
-/* background-image: url('../images/concrete-wall.png'); */
-/*C17400*/
-background-color:#c90028;
-background-image: url('../images/diagmonds-light.png');
-background-repeat:repeat;
+/*fce08d C17400 c90028  diagmonds-light*/
+	background-color:#BBB97F; 
+	background-image: url('../images/concrete-wall.png');
+	background-repeat:repeat;
+
+
+
 }
 .texts {
 	box-shadow: 0 0 13px -1px rgba(0,0,0, 0.6);
 }
-.sec {
+
+
+
+.section1 {
 	float: right;
     padding: 1%;
     
 }
-.sections {
+.boxes {
 	margin: 0% 2% 0% 0%;
 	height: 270px;
 }
-.sections p {
+.boxes p {
 	float: right;
 	color: rgb(47, 26, 26);
 	padding: 2% 2% 2% 2%;
 }
-.sections img {
+.boxes img {
 	float: right;
     margin: 2% 10% 0% 0%;
 	
 }
-
-.section1 {
+.box1 {
 	width: 30%;
 	float: right;
 	border: 2px solid #3D4348;
 }
-.section2 {
+.box2 {
 	width: 30%;
 	float: right;
 	border: 2px solid #3D4348;
 	
 }
+.box3 {
+	width: 30%;
+	float: right;
+	border: 2px solid #3D4348;
+	
+}
+
+
+
+
+
+.section2 {
+	padding-right: 1em;
+    padding-left: 1em;
+}
+.section2 ul {
+	float:right;
+	width:50%;
+	padding-top: 1em;
+	list-style:none;
+}
+.section2 li{
+	width:100%;
+}
+
+.section2 h6 {
+	color:#31234C;
+}
+
+.buy {
+	background: rgba(255, 200, 0, 0.12);
+	float:right;
+}
+.buy :first-child div{
+	/* position:relative; */
+	width:300px;
+	height:300px;
+	margin-right: 4em;
+	background:url('../images/se/8.png') no-repeat 0% 0%;
+}
+.buy :first-child img {
+	
+}
+.buy :first-child h3  {
+	/* position:absolute;
+	top: 1.5em;
+    right: 6.2em; */
+	color:white;
+	padding-top: 2.4em;
+	margin-right: 6.2em;
+    
+}
+
+.buy li div {
+	width:150px;
+	height:150px;
+}
+.buy li div h6{
+	width: 19em;
+	margin-right: 11em;
+    padding-top: 2em;
+}
+.buy :nth-child(2) div  {
+	background:url('../images/se/ebook.png') no-repeat 0% 0%;
+}
+.buy :nth-child(3) div  {
+	background:url('../images/se/software.png') no-repeat 0% 0%;
+}
+.buy :nth-child(4) div  {
+	background:url('../images/se/host2.png') no-repeat 0% 0%;
+}
+.buy :nth-child(5) div  {
+	background:url('../images/se/online-shoping.png') no-repeat 0% 0%;
+}
+.buy :nth-child(6) div  {
+	background:url('../images/se/ticket.png') no-repeat 0% 0%;
+}
+.buy :nth-child(7) div  {
+	background:url('../images/se/hotel.png') no-repeat 0% 0%;
+}
+.buy :nth-child(8) div  {
+	background:url('../images/se/online-shoping.png') no-repeat 0% 0%;
+}
+
+
+
+
+
+.pay {
+	background: rgba(98, 0, 255, 0.12);
+	float:left;
+}
+.pay :first-child div {
+	width:300px;
+	height:300px;
+	margin-right: 4em;
+	background:url('../images/se/9.png') no-repeat 0% 0%;
+}
+.pay :first-child h3 {
+	color:white;
+	padding-top: 2em;
+	margin-right: 4em;
+}
+.pay li div {
+	width:150px;
+	height:150px;
+}
+.pay li div h6{
+	width: 19em;
+	margin-right: 11em;
+    padding-top: 2em;
+}
+.pay :nth-child(2) div  {
+	background:url('../images/se/college.png') no-repeat 0% 0%;
+}
+.pay :nth-child(3) div  {
+	background:url('../images/se/exam.png') no-repeat 50% 0%;
+}
+.pay :nth-child(4) div  {
+	background:url('../images/se/magazine.png') no-repeat 0% 0%;
+}
+.pay :nth-child(5) div  {
+	background:url('../images/se/edit.png') no-repeat 0% 0%;
+}
+.pay :nth-child(6) div  {
+	background:url('../images/se/sves.png') no-repeat 40% 0%;
+}
+.pay :nth-child(7) div  {
+	background:url('../images/se/interview.png') no-repeat 0% 0%;;
+}
+.pay :nth-child(8) div  {
+	background:url('../images/se/onlinenic.png') no-repeat 0% 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section3 {
-	width: 30%;
-	float: right;
-	border: 2px solid #3D4348;
-	
-}
-
-
-
-.section4 {
 	clear:both;
 }
-.section4 h1 {
+.section3 h1 {
 	margin:0% 1% 2% 1%;
 }
-.section4 h1 {
+.section3 h1 {
 	
 }
 
@@ -434,7 +616,7 @@ box-shadow: inset 0px 0px 100px -30px #000000,0px 0px 0px 0px #FFFFFF;
  
     margin-right: 19%;
 }
-.slider_wrap:hover .nextprevplaypause {
+.new:hover .nextprevplaypause {
  opacity:1;
  cursor: pointer;
 }
@@ -455,8 +637,8 @@ input.nextprevplaypause  {
 }
 
 #prev{
- top: 47%;
- left: 19.6%;
+    top: 50%;
+    left: 1%;
  background: url('../images/slider/prev.png') no-repeat center;
 }
 #prev:hover{
@@ -467,9 +649,9 @@ input.nextprevplaypause  {
 }
 
 #next {
- top: 47%;
- right: 18%;
- background: url('../images/slider/next.png') no-repeat center;
+    top: 50%;
+    right: 1%;
+	background: url('../images/slider/next.png') no-repeat center;
 }
 #next:hover{
  background-image: url('../images/slider/nexth.png');
@@ -479,8 +661,8 @@ input.nextprevplaypause  {
 }
 
 #play-pause{
- top: 47%;
- right: 49%;
+	top: 90%;
+    right: 16%;
  background: url('../images/slider/pause.png') no-repeat center;
 }
 .pause {}
@@ -494,7 +676,7 @@ input.nextprevplaypause  {
 #bullets {
  position: absolute;
  top: 92%;
- left: 47%;
+ left: 45%;
  z-index: 1;
 }
 .bullet {

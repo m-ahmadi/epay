@@ -1,4 +1,5 @@
 $(function () {
+	
 	$('.smbutton').on('mouseenter', function(){
 		//$('.sub-menu').addClass('visible');
 		// $('.sub-menu').animate(
@@ -14,8 +15,8 @@ $(function () {
 		// );
 		
 		if (!$('.sub-menu').is(':animated')) {
-			$('.sub-menu').slideDown({duration: 200})
-			.css({zIndex: 1});
+			$('.sub-menu').css({zIndex: 1})
+			.slideDown({duration: 200});
 		}
 		
 		

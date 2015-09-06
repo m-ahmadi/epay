@@ -34,7 +34,7 @@ var slideID,
 	DESCSET_FULL = 201;
 
 $(function () {
-    autoplayOff();
+    autoplayOn();
 	
 	$('#next').on('click', function () {
 		nextSlide();
